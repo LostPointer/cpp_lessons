@@ -20,7 +20,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Make build dir
-      working-directory: ${{github.workspace}}/
-      run: ls
+    - name: run cmake
+      working-directory: ${{github.workspace}}/homework_01
+      run: cmake -B./build .
+      
+    - name: make
+      working-directory: ${{github.workspace}}/homework_01
+      run: make
   
