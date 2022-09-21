@@ -22,5 +22,5 @@ jobs:
     
     - name: Make build dir
       working-directory: ${{github.workspace}}/lesson_01/
-      run: mkdir lesson_01/build
+      run: ls
   
