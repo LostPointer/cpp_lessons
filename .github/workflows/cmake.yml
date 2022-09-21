@@ -21,6 +21,6 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Make build dir
-      working-directory: ${{github.workspace}}/lesson_01/
+      working-directory: ${{github.workspace}}/
       run: ls
   
